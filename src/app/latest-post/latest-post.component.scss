@@ -1,0 +1,38 @@
+h5 {
+    font-weight: bold;
+}
+
+.card-title,
+.card-text {
+    color: black;
+    font-size: 13px;
+}
+
+.card {
+    height: 270px;
+    border-radius: 0;
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+hr {
+    border-top: 3px solid;
+    color: #7cb4e6;
+    opacity: unset;
+    width: 90px;
+}
+
+.read-more-btn {
+    background-color: #7cb4e6;
+    border-radius: 20px;
+    font-weight: bold;
+    display: unset;
+    padding: 10px;
+    width: fit-content;
+    cursor: pointer;
+}

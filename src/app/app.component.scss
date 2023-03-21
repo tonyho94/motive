@@ -1,0 +1,204 @@
+h3 {
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+hr {
+    border-top: 10px solid;
+    color: #7cb4e6;
+    opacity: unset;
+}
+
+nav {
+    img {
+        height: 30px;
+    }
+
+    .navbar-nav {
+        img {
+            height: 16px;
+        }
+    }
+}
+
+.cisco-logo {
+    height: 75px;
+}
+
+// .cisco-banner {
+//     img {
+//         max-width: 100%;
+//         height: auto;
+//         object-fit: cover;
+//     }
+
+//     .cisco-text {
+//         position: absolute;
+//         top: 50%;
+//         left: 43%;
+//         transform: translate(-50%, -50%);
+//         color: white;
+//     }
+// }
+
+.cisco-banner {
+    position: relative;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 380px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        object-fit: cover;
+    }
+
+    .cisco-text {
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        // max-width: 80%;
+        color: #fff;
+        // text-align: center;
+        position: absolute;
+        z-index: 1;
+        margin-top: 42px;
+    }
+}
+
+
+
+.bg-latest-post {
+    background: #000046;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+
+    hr {
+        border-top: 3px solid;
+        color: white;
+        opacity: unset;
+        width: 90px;
+    }
+}
+
+.cta-btn {
+    background-color: #7cb4e6;
+    color: white;
+    border-radius: 10px;
+    width: 50px;
+    padding: 10px 25px;
+    display: unset;
+    cursor: pointer;
+}
+
+.cisco-info {
+
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+}
+
+.partners {
+    .card {
+        margin-top: 20px;
+
+        .card-body {
+            // display: flex;
+            // justify-content: space-around;
+            // align-items: center;
+
+            img {
+
+                width: 250px;
+            }
+
+            .card-text {
+                margin: 14px;
+            }
+        }
+    }
+}
+
+.read-more-section {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    h5 {
+        color: white;
+        background-color: #7cb4e6;
+        padding: 20px 20px 40px 20px;
+    }
+
+    .image-container {
+        position: relative;
+
+        img {
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .read-more {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+    }
+
+    .image-container:hover img {
+        opacity: 0.7;
+    }
+
+    .image-container:hover .read-more {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .cisco-banner {
+        .cisco-text {
+            width: 70%;
+            margin-top: 75px;
+        }
+    }
+
+    .partners {
+        .card {
+            .card-body {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .card-text {
+                    width: 500px;
+                }
+            }
+        }
+    }
+}
